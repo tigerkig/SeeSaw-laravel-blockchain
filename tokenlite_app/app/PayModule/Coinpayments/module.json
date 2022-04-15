@@ -1,0 +1,15 @@
+{
+    "name": "Coinpayments",
+    "alias": "Coinpayments",
+    "description": "Coinpayments Payment Module for TokenLite to accept payments from contributors.",
+    "status": true,
+    "type": "addons",
+    "requires": {
+		"app": "^1.1.2",
+		"laravel": "~5.7"
+	},
+	"author": "Softnio",
+	"package": "TokenLite",
+	"version": "1.0.3",
+	"update": "20190830"
+}

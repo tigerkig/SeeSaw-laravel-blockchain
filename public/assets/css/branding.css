@@ -1,0 +1,205 @@
+:root {
+	--theme-text-muted: #888;
+}
+
+.select-prefix-placeholder {
+	visibility: hidden;
+}
+
+.select-prefix-container, .select-prefix-placeholder  {
+	display: inline-flex;
+	flex-direction: column;
+	margin-right: 4px;
+	min-width: 43px;
+}
+
+.select2-selection__rendered {
+	position: relative;
+}
+
+.select2-selection__rendered .select-prefix-container {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.select-prefix-hint {
+	font-size: 0.6rem;
+	color: var(--theme-text-muted);
+	font-weight: bold;
+}
+
+.btn:not(.disabled, :disabled) {
+	cursor: pointer;
+}
+
+input.stealth {
+	display: inline;
+	border: none;
+	-webkit-appearance: none;
+	outline: none;
+	background: transparent;
+	min-width: none;
+	width: auto;
+}
+
+.pay-amount-u, .pay-amount-u-token {
+	height: 24px;
+	color: #342d6e !important
+}
+
+.pay-amount-u {
+	margin-top: 3px;
+}
+
+.pay-amount-u-token {
+	margin-bottom: 2px  !important;
+	margin-top: 1px !important;
+}
+
+.modal.show {
+	background-color: rgba(0,0,0,0.5)
+}
+
+@media (max-width: 480px) {
+	.token-contribute .token-calc {
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+}
+
+@media (max-width: 400px) {
+	.token-contribute .token-calc {
+		flex-direction: column;
+		align-items: start;
+	}
+	.token-contribute .token-calc > * {
+		align-self: start;
+	}
+	.token-received.token-received-alt {
+		flex-direction: column
+	}
+}
+
+
+@media (max-height: 730px) {
+	.modal-dialog {
+		margin-top: 8px;
+	}
+	.pay-wallet-address #qr-code {
+		width: 150px;
+		height: 150px;
+		transform-origin: 0 0;
+		transform: scale(0.75);
+	}
+}
+
+.add-wallet-container {
+	background-color: #ff6868;
+	padding: 8px 20px;
+	color: white;
+	border-radius: 4px;
+}
+
+.add-wallet-container a {
+	color: #1FE0FF
+}
+
+.add-wallet-container a:hover {
+	color: #17AFC8;
+}
+
+// PRICE CHART
+
+.price-chart-price {
+	margin-top: 8px;
+	margin-left: 16px;
+	display: flex;
+	flex-direction: column;
+	line-height: 0.8em;
+}
+
+.price-chart-price .price {
+	font-family: Roboto, sans-serif;
+	display: inline;
+	font-size: 0.9rem;
+	margin-bottom: 0;
+}
+
+.price-chart-price .currency {
+	font-family: Roboto, sans-serif;
+	font-size: 0.7rem;
+	margin-left: 6px;
+}
+
+.price-chart-price .change {
+	font-family: Roboto, sans-serif;
+	font-size: 0.8em;
+	transform: translateY(-12px);
+	letter-spacing: 0.04em;
+}
+
+.price-chart-label-container {
+	height: 22px;
+}
+
+
+.price-chart-price .change.positive {
+	color: #22a16c;
+}
+
+.price-chart-price .change.negative {
+	color: #ff6666;
+}
+
+.token-price-graph .card-head.has-aside {
+	align-items: flex-start;
+}
+
+.price-chart-buttons {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.price-chart-buttons .join-btn {
+	margin-top: 0;
+}
+
+.price-chart-buttons .chart-buttons {
+	float: right;
+	display: flex;
+	max-width: 310px;
+	width: 100%;
+	justify-content: space-between;
+	/* margin-top: 16px; */
+}
+
+.price-chart-buttons a {
+	appearance: none;
+	-webkit-appearance: none;
+	background-color: transparent;
+	border-radius: 16px;
+	padding: 4px 12px;
+	border: none;
+	word-spacing: 0.2em;
+	cursor: pointer;
+	outline: inherit;
+	transition: color 200ms ease-out, background-color 200ms ease-out;
+	color: #000;
+}
+
+.price-chart-buttons a.active {
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.token-price-graph .chart-tokensale {
+	height: 180px;
+}
+
+.token-price-graph .card-innr {
+	padding-bottom: 8px;
+}

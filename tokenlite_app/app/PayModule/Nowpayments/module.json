@@ -1,0 +1,15 @@
+{
+    "name": "Nowpayments",
+    "alias": "Nowpayments",
+    "description": "NOWPayments Payment Module for TokenLite to accept payments from contributors.",
+    "status": true,
+    "type": "addons",
+    "requires": {
+		"app": "^1.1.2",
+		"laravel": "~5.7"
+	},
+	"author": "Michael Elnajami github.com/makmoud98",
+	"package": "TokenLite",
+	"version": "1.0.0",
+	"update": "20220110"
+}
